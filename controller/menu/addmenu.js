@@ -2,6 +2,7 @@ import db from "../../config/db.js";
 
 const addMenu = async (req, res) => {
   const { food_name, description, price, image, category } = req.body;
+  console.log(food_name)
 
   try {
     const sql = `
