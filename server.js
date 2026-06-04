@@ -7,7 +7,7 @@ import db from "./config/db.js";
 import cors from "cors";
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 app.use("/api", router);
@@ -16,10 +16,8 @@ app.get("/", (req, res) => {
     msg: `Mesi Catering Backend Running `,
   });
 });
-//basic router
-//dynamic router
-//query string router
 
-app.listen(port, () => {
-  console.log(`server running http://localhost:${port}`);
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
