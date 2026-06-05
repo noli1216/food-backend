@@ -3,7 +3,7 @@ import express from "express";
 import register from "../controller/users/register.js";
 import login from "../controller/users/login.js";
 
-import addMenu from "../controller/menu/addMenu.js";
+import addMenu from "../controller/menu/addmenu.js";
 import getMenus from "../controller/menu/getMenus.js";
 import deleteMenu from "../controller/menu/deleteMenu.js";
 import updateMenu from "../controller/menu/updateMenu.js";
