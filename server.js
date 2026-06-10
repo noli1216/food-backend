@@ -12,8 +12,8 @@ const PORT = process.env.PORT || 3001;
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
-    credentials: true,
+    origin: "https://food-frontend-go7h.vercel.app",
+    credentials: true, // Enable this if you send cookies or authorization headers
   }),
 );
 app.use(express.json());
